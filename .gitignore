@@ -130,3 +130,5 @@ dmypy.json
 .idea
 .idea/
 .env.dev
+/.idea
+/db.sqlite3
