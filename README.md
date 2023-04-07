@@ -12,5 +12,4 @@ Address
 Date
 Users can build the data schema with any number of columns of any type described above. Some types support extra arguments (like a range), while others do not.
 Each column also has its own name (which will be a column header in the CSV file) and order (just a number to manage column order).
-The completed application should be deployed to PythonAnywhere (https://www.pythonanywhere.com/) and be available online. Please, create a test user and provide us with the credentials.
 The source code should be committed to the repository on GitHub, Bitbucket, or GitLab
