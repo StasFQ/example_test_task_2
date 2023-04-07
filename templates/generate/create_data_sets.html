@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="{% url 'generate_data' schema_id=schema.id %}">
+    {% csrf_token %}
+    <label for="num_records">Number of Records:</label>
+    <input type="number" name="num_records" id="num_records" required>
+    <button type="submit">Generate Data</button>
+</form>
+
+
+</body>
+</html>

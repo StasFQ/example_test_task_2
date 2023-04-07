@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Press to the object and you will generate data</h1>
+    {% for i in schema %}
+        <form method="post" action="{% url 'generate_data' schema_id=i.id %}">
+    {% csrf_token %}
+            <p><a href="{% url 'generate_data' i.id %}">{{ i }}</a>
+    <label for="num_records">Number of Records:</label>
+    <input type="number" name="num_records" id="num_records" required>
+    <button type="submit">Generate Data</button>
+</form>
+    {% endfor %}
+<p><a href="{% url 'create_data_schema' %}">Create Schema</a></p>
+</body>
+</html>
